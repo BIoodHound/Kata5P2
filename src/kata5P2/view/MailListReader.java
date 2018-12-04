@@ -1,11 +1,11 @@
-package kata4.view;
+package kata5P2.view;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import kata4.model.Mail;
+import kata5P2.model.Mail;
 
 public class MailListReader {
     public List<Mail> read(String fileName) throws IOException{
