@@ -7,6 +7,7 @@ import kata5P2.model.Mail;
 import kata5P2.view.HistogramDisplay;
 import kata5P2.view.MailHistogramBuilder;
 import kata5P2.view.MailListReader;
+import kata5P2.view.MailListReaderBD;
 
 public class Kata5P2 {
     static String fileName;
@@ -21,8 +22,7 @@ public class Kata5P2 {
     }
     
     public static void input() throws IOException{
-        fileName = "email.txt";
-        mailList = new MailListReader().read(fileName);
+        mailList = new MailListReaderBD().read();
     }
     public static void process(){
         histogram = new MailHistogramBuilder().build(mailList);
